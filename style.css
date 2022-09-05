@@ -1,0 +1,111 @@
+
+.textoto a{
+    text-decoration: none;
+    color:whitesmoke;
+    margin-top:1%;
+    margin-bottom: 1%;
+}
+.disenio{
+    margin-top: 30px;
+}
+
+.caru{
+    height: 20%;
+}
+*{
+    color:white;
+}
+.carousel slide {
+    height: 200px;
+}
+
+.medioIndex p{
+display: inline;
+width: 40%;
+color:yellow;
+}
+.imgIndexWeb{border:none;
+    width: 100%;height:250px; background-image: url(img/video-banner.gif);
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 576px){
+    /* INICIO INDEX WEB */
+    .webVista{display:none;} .medioIndex{display: none;} .index-footer-web{display:none;} .footer-redes-web{display:none;} .index-footer-web-a{display: none;}  .medioIndex-b{display:none;}
+    .medioIndexApp{
+        width: 80%; margin-left:25%;font-size:small;
+    }
+    .footer-redes-app{margin-bottom: 25px;}
+    .logos-redes{border-radius:100px;}
+
+/* FIN iNDEX WEB */
+/* inicio website web */
+.galeriaweb-web{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 20px;  
+   grid-column-gap:20px;
+   margin-top:2%;
+   margin-bottom:2%;
+  }
+
+.galeriaweb-item{
+ margin:auto;
+}
+  .imgWP{
+    height:200 px;width:200px ; 
+    transition: all 0.2s ease;
+    
+  }
+  .imgWP:hover{
+    transform: scaleX(-1);
+    opacity:0.5;    
+transition: all 0.4s ease;
+   }
+  /* fin website web */
+
+
+}
+
+
+@media (min-width: 576px){
+
+    /* INICIO INDEX */
+    .appVista{display:none;} .medioApp{display:none;} .footer-index-mobile{display:none;}
+
+    .footer-redes-web{
+     display:flex;
+    }
+    .logos-redes{
+        border-radius: 100px;
+        margin-top:60%;
+    }
+    .footer-redes-app{display:none;}
+/* FIN INDEX */
+.container-webProject{
+    display: grid;
+    grid-template-rows:1fr 1 fr 3fr  1fr  1 fr;
+    grid-row-gap: 30px;  
+  }
+
+  .galeriaweb-web{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 30px;  
+   grid-column-gap:30px;
+   margin-top:2%;
+   margin-bottom:2%;
+  }
+
+.galeriaweb-item{
+ margin:auto;
+}
+  .imgWP{
+    height:200 px;width:200px ; 
+    transition: all 0.2s ease;
+    opacity: 1;
+  }
+}
